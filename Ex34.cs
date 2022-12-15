@@ -1,12 +1,14 @@
 using static MyLibrary;
 public class Ex34
 {
-     public static  void Task28()
+     public static  void Task34()
     {
         int[]array = CreateArray(7);
         Fill(array);
-        int numbercount = count(array);
+        string array_text = Print(array);
+        int number = Count(array);
 
-        Console.WriteLine(numbercount);
+        Console.WriteLine(array_text);
+        Console.WriteLine(number);
     }
 }

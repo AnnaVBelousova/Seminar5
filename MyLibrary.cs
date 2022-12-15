@@ -28,16 +28,16 @@ public static class MyLibrary
     return String.Join(' ', array);
 } 
 // Определение количества четных чисел в массиве
-   public static int count(int[]array)
+   public static int Count(int[]array)
    {
-   int count = 0;
+   int number = 0;
    int length = array.Length;
-   int index = 0;
-   for (int i = 0; i > length; i++)
+  //  int index = 0;
+   for (int i = 0; i < length; i++)
    {
-     if (array[index]%2 == 0)
-     count = count+1;
+     if (array[i]%2 == 0)
+     number = number+1;
    }
-     return count;
+     return number;
  }
 }
