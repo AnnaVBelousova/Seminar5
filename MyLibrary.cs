@@ -17,7 +17,7 @@ public static class MyLibrary
     while (index < length)
     {
        // Next() - заполнение случайными неотрицательными числами
-        array[index] = new Random().Next();
+        array[index] = new Random().Next(0,100);
         
         index ++; 
     }
@@ -32,12 +32,27 @@ public static class MyLibrary
    {
    int count = 0;
    int length = array.Length;
-   int index = 0;
-   for (int i = 0; i > length; i++)
+   
+   for (int i = 0; i < length; i++)
    {
-     if (array[index]%2 == 0)
+     if (array[i]%2 == 0)
      count = count+1;
+     
    }
      return count;
+ }
+ // Определение суммы  чисел, стоящих на нечетных позициях
+ public static int number(int[]array)
+   {
+   int summa = 0;
+   int length = array.Length;
+   
+   for (int i = 0; i < length; i++)
+   {
+     if (i %2 != 0)
+     summa = summa+array[i];
+     
+   }
+     return summa;
  }
 }
