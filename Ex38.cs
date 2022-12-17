@@ -4,9 +4,19 @@ public class Ex38
 {
      public static  void Task38()
     {
-        int[]array = CreateArray(8);
-        Fill(array);
-        string array_text = Print(array);
+        double[]ar = CreateArraydouble(8);
+        Fillarraydouble(ar);
+        string array_text = Printarraydouble(ar);
+
+        double min = minimum(ar);
+        double max = maximum(ar);
+        double difference = dif(max, min);
+        Console.WriteLine(array_text);
+        Console.WriteLine("Min:  " + min);
+        Console.WriteLine("Max:  " + max);
+
+        Console.WriteLine("Difference:  " + difference);
+       
         
     }
 }
